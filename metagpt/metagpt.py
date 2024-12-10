@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 from openai import OpenAI
 
+MODEL = 'gpt-3.5-turbo'
+
 def ask(question, client):
     """
     inputs:
@@ -23,7 +25,7 @@ def ask(question, client):
             "role": "user",
             "content": question, # Place question here
         }],
-        model=MODEL,
+        model = MODEL,
     )
 
     out = response.choices[0].message.content
