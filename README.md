@@ -4,10 +4,10 @@ A simple and intuitive wrapper that allows users to easily interact with the Ope
 
 ## Key Features
 
-- **Seamless Integration**: Designed specifically for Jupyter Notebooks, ensuring a smooth user experience.
-- **Simplified API Calls**: Reduces boilerplate code, making it easier to query OpenAI models.
-- **Customizable**: Provides flexibility to fine-tune parameters for your specific needs.
-- **Error Handling**: Built-in error handling for common OpenAI API issues.
+- 🤝 **Seamless Integration**: Designed specifically for Jupyter Notebooks, ensuring a smooth user experience.
+- 🗣 **Simplified API Calls**: Reduces boilerplate code, making it easier to query OpenAI models.
+- 💥 **Customizable**: Provides flexibility to fine-tune parameters for your specific needs.
+- 🚨 **Error Handling**: Built-in error handling for common OpenAI API issues.
 
 ## Requirements
 
