@@ -22,4 +22,4 @@ This package requires the following dependencies:
 To use this wrapper, clone the repository and install it directly from GitHub:
 
 ```bash
-pip install git+https://github.com/your_username/openai-jupyter-wrapper.git
+pip install git+https://github.com/dpear/metagpt.git
