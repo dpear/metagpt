@@ -37,6 +37,8 @@ OPEN_AI_KEY='sk-proj-gGRfNmVPcDq7jpyegFcNIjKsJQ_AZr1P6hQH7bu-...'
 c = OpenAI(api_key=OPEN_AI_KEY)
 ask('what is a bagel', client=c)
 ```
+## Multilingual Voice Recognition
+![](examples/multilingual-voice.png)
 
 ## How to Obtain an API Key from OpenAI
 
