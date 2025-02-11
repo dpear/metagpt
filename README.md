@@ -1,42 +1,38 @@
 # OpenAI Jupyter Notebook Wrapper
 
-A simple and intuitive wrapper that allows users to easily interact with the OpenAI API directly within Jupyter Notebooks. This wrapper simplifies the process of querying the OpenAI models and makes it more accessible for researchers, developers, and data scientists working in a notebook environment.
+AutoMetaD (Processing MetaData Automatically) is an LLM-based tool presented in the form of a jupyter notebook that allows users to easily clean and summarize metadata with support for attributes commonly relevant to microbiome studies. Users can interact with an LLM within a jupyter notebook in ways that automatically provide context to queries based on the loaded metadata file. Summarizing a table and visualizing columns and intersections of columns have been automated, along with specific functions for anomaly detection and column name correcting. 
 
-## Key Features
-
-- 🤝 **Seamless Integration**: Designed specifically for Jupyter Notebooks, ensuring a smooth user experience.
-- 🗣 **Simplified API Calls**: Reduces boilerplate code, making it easier to query OpenAI models.
-- 💥 **Customizable**: Provides flexibility to fine-tune parameters for your specific needs.
-- 🚨 **Error Handling**: Built-in error handling for common OpenAI API issues.
-
-## Requirements
-
-This package requires the following dependencies:
-
-- `pandas` - For data handling and manipulation.
-- `numpy` - For numerical operations.
-- `openai` - Official OpenAI Python client.
 
 ## Installation
 
-To use this wrapper, clone the repository and install it directly from GitHub:
+To use this notebook, clone the repository and create a new conda environment:
 
 ```bash
-pip install git+https://github.com/dpear/metagpt.git
+git clone https://github.com/dpear/metagpt.git
+cd metagpt
+conda create env -n metagpt -f environment.yml
 ```
 
-## Example Code Snippet
-
-Here's an example of how to use `metagpt`:
-
-```python
-from metagpt import ask
-from openai import OpenAI
-
-OPEN_AI_KEY='sk-proj-gGRfNmVPcDq7jpyegFcNIjKsJQ_AZr1P6hQH7bu-...'
-c = OpenAI(api_key=OPEN_AI_KEY)
-ask('what is a bagel', client=c)
+If you wish to use within an existing conda environment:
+```bash
+conda env update --name existing_env --file environment.yml
 ```
+
+Then, activate the environment to add a jupyter notebook kernel:
+```bash
+conda activate metagpt
+python -m ipykernel install --user --name metagpt --display-name "metagpt"
+```
+
+## Using the Notebook
+
+First activate the environment, then actiate the jupyter notebook server (please note that you must activate the environment before starting the jupyter notebook server):
+```bash
+conda activate metagpt
+jupyter notebook
+```
+Then navigate to the `proof_of_concept_template_ai_memorializing_DP.ipynb` notebook and run to see an example of the different supported summarization and cleaning functions.
+
 ## Multilingual Voice Recognition
 ![here](examples/img/multilingual-voice.png)
 
