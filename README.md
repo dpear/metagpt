@@ -10,7 +10,7 @@ To use this notebook, clone the repository and create a new conda environment:
 ```bash
 git clone https://github.com/dpear/metagpt.git
 cd metagpt
-conda create env -n metagpt -f environment.yml
+conda env create -n metagpt -f environment.yml
 ```
 
 If you wish to use within an existing conda environment:
