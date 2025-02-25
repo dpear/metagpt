@@ -33,32 +33,17 @@ jupyter notebook
 ```
 Then navigate to the `proof_of_concept_template_ai_memorializing_DP.ipynb` notebook and run to see an example of the different supported summarization and cleaning functions.
 
+## Cells that make a call to the LLM automatically disable themselves
+Cells that make a call to the LLM will automatically disable themselves by switching from `code` cell type to `raw` cell type. This is because each call to the LLM may produce different results based on a probabilistic response generating scheme, which is re-trained each time a call is made (imagine asking ChatGPT the same question twice in a row, you would expect to get two similar but different results). Normal jupyter notebook behavior -- or code in general -- maintains that the same running the same code or cells from top to bottom produces the same result, which would not be the case for calls to the LLM. Unlike `np.random` or similar libraries that rely on stochasticity, there is no way of setting a seed when making calls to the LLM. Thus we will save both the call and the response to the LLM but disable the cells, which is especially helpful so that **an informative response from the LLM does not get deleted.**
+
+## Re-Enabling cells that make a call to an LLM
+Cells need only be switched back from `raw` cell type to `code` cell type.
 
 ## How to Obtain an API Key from OpenAI
 
 To use OpenAI's API with this project, you will need an API key.
-Navigate to OpenAI's Developer Quickstart page here:
-[https://platform.openai.com/docs/quickstart]
-
-
-
-
-#### Step 1: Sign Up or Log In
-1. Go to the [OpenAI website](https://platform.openai.com/).
-2. Click **Sign Up** to create an account or **Log In** if you already have one.
-
-#### Step 2: Access the API Key Page
-1. After logging in, navigate to the [API Keys page](https://platform.openai.com/account/api-keys).
-2. This is where you can manage your API keys.
-
-#### Step 3: Generate a New API Key
-1. Click the **+ Create new secret key** button.
-2. A new API key will be displayed. **Copy it immediately**, as it will not be shown again.
-   - If you lose it, you’ll need to create a new key.
-
-#### Step 4: Secure Your API Key
-- **Do not share your API key publicly.**
-- Use environment variables or a configuration file to manage your key securely.
+Navigate to OpenAI's Developer Quickstart page for instructions on how to create and export an API key:
+https://platform.openai.com/docs/quickstart
 
 #### Troubleshooting:
 - If you encounter problems with your API key, it may require setting up an account that has a paid subscription plan. 
