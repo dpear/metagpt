@@ -1,6 +1,6 @@
-# OpenAI Jupyter Notebook Wrapper
+# LMNOP
 
-AutoMetaD (Processing MetaData Automatically) is an LLM-based tool presented in the form of a jupyter notebook that allows users to easily clean and summarize metadata with support for attributes commonly relevant to microbiome studies. Users can interact with an LLM within a jupyter notebook in ways that automatically provide context to queries based on the loaded metadata file. Summarizing a table and visualizing columns and intersections of columns have been automated, along with specific functions for anomaly detection and column name correcting. 
+LMNOP (LLM-based Microbial Metadata Notebook Processing) is a tool presented in the form of a jupyter notebook that allows users to easily clean and summarize metadata fields with support for attributes commonly relevant to microbiome studies, such as summary statistics and visualizations. Users can directly query an LLM within a jupyter notebook in ways that automatically provide context to queries based on the loaded metadata file. With automated improved prompt engineering, obtaining and running code suggestions from ChatGPT. The notebook also provides functions for anomaly detection and column name correcting are presented. Voice recognition is also supported through OpenAI's extremely accurate whisper voice transcription library.
 
 
 ## Installation
