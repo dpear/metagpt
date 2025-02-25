@@ -33,12 +33,15 @@ jupyter notebook
 ```
 Then navigate to the `proof_of_concept_template_ai_memorializing_DP.ipynb` notebook and run to see an example of the different supported summarization and cleaning functions.
 
-## Multilingual Voice Recognition
-![here](examples/img/multilingual-voice.png)
 
 ## How to Obtain an API Key from OpenAI
 
-To use OpenAI's API with this project, you will need an API key. Follow these steps to obtain your key:
+To use OpenAI's API with this project, you will need an API key.
+Navigate to OpenAI's Developer Quickstart page here:
+[https://platform.openai.com/docs/quickstart]
+
+
+
 
 #### Step 1: Sign Up or Log In
 1. Go to the [OpenAI website](https://platform.openai.com/).
