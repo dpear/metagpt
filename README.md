@@ -15,20 +15,20 @@ conda env create -n metagpt -f environment.yml
 
 If you wish to use within an existing conda environment:
 ```bash
-conda env update --name existing_env --file environment.yml
+conda env update --name existing_env_name --file environment.yml
 ```
 
 Then, activate the environment to add a jupyter notebook kernel:
 ```bash
 conda activate metagpt
-python -m ipykernel install --user --name metagpt --display-name "metagpt"
+python -m ipykernel install --user --name lmnop --display-name "Python (lmnop jupyter kernel)"
 ```
 
 ## Using the Notebook
 
 First activate the environment, then actiate the jupyter notebook server (please note that you must activate the environment before starting the jupyter notebook server):
 ```bash
-conda activate metagpt
+conda activate lmnop
 jupyter notebook
 ```
 Then navigate to the `proof_of_concept_template_ai_memorializing_DP.ipynb` notebook and run to see an example of the different supported summarization and cleaning functions.
