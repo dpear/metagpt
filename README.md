@@ -34,10 +34,15 @@ jupyter notebook
 Then navigate to the `proof_of_concept_template_ai_memorializing_DP.ipynb` notebook and run to see an example of the different supported summarization and cleaning functions.
 
 ## Cells that make a call to the LLM automatically disable themselves
-Cells that make a call to the LLM will automatically disable themselves by switching from `code` cell type to `raw` cell type. This is because each call to the LLM may produce different results based on a probabilistic response generating scheme, which is re-trained each time a call is made (imagine asking ChatGPT the same question twice in a row, you would expect to get two similar but different results). Normal jupyter notebook behavior -- or code in general -- maintains that the same running the same code or cells from top to bottom produces the same result, which would not be the case for calls to the LLM. Unlike `np.random` or similar libraries that rely on stochasticity, there is no way of setting a seed when making calls to the LLM. Thus we will save both the call and the response to the LLM but disable the cells, which is especially helpful so that **an informative response from the LLM does not get deleted.**
+Cells that make a call to the LLM will automatically disable themselves by switching from `code` cell type to `raw` cell type. This is because each call to the LLM may produce different results based on a probabilistic response generating scheme, which is re-trained each time a call is made (imagine asking ChatGPT the same question twice in a row, you would expect to get two similar but different results). Normal jupyter notebook behavior–code behavior in general–maintains that running the same code or cells from top to bottom produces the same result, which would not be the case for calls to the LLM. Unlike `np.random` or similar libraries that rely on stochasticity, there is no way of setting a seed when making calls to the LLM. Thus we will save both the call and the response to the LLM but disable the cells, which is especially helpful so that **an informative response from the LLM does not get deleted.**
 
 ## Re-Enabling cells that make a call to an LLM
-Cells need only be switched back from `raw` cell type to `code` cell type.
+Cells need only be switched back from `raw` cell type to `code` cell type. More information can be found at the following resources:
+
+https://jupyter-notebook.readthedocs.io/en/stable/notebook.html
+https://www.geeksforgeeks.org/markdown-cell-in-jupyter-notebook/
+https://discourse.jupyter.org/c/notebook/31
+
 
 ## How to Obtain an API Key from OpenAI
 
