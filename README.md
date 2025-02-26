@@ -5,12 +5,13 @@ LMNOP (LLM-based Microbial Metadata Notebook Processing) is a tool presented in 
 
 ## Installation
 
-To use this notebook, clone the repository and create a new conda environment:
+To use this notebook, clone the repository and create a new conda environment.
+An environment file will set the name of your env to `lmnop`:
 
 ```bash
-git clone https://github.com/dpear/metagpt.git
-cd metagpt
-conda env create -n metagpt -f environment.yml
+git clone https://github.com/dpear/LMNOP.git
+cd LMNOP
+conda env create -f environment.yml
 ```
 
 If you wish to use within an existing conda environment:
@@ -20,7 +21,7 @@ conda env update --name existing_env_name --file environment.yml
 
 Then, activate the environment to add a jupyter notebook kernel:
 ```bash
-conda activate metagpt
+conda activate lmnop
 python -m ipykernel install --user --name lmnop --display-name "Python (lmnop jupyter kernel)"
 ```
 
