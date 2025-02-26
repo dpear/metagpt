@@ -1,11 +1,12 @@
+name: lmnop
 channels:
   - conda-forge
   - bioconda
   - defaults
 dependencies:
-  - ipython=8.30.0 ############################
-  - pandas=2.2.3 #######################
-  - traitlets=5.14.3 ###############################
+  - ipython=8.30.0
+  - pandas=2.2.3
+  - traitlets=5.14.3
   - jupyter
   - click
   - flake8
@@ -13,19 +14,18 @@ dependencies:
   - pep8
   - pyyaml 
   - pip:
-      - ipylab==1.0.0 ########################
-      - ipywidgets==8.1.5 #################
+      - ipylab==1.0.0 
+      - ipywidgets==8.1.5 
       - ipykernel
-      - langchain==0.3.10 #################
-      - langchain-core==0.3.22 #################
-      - langchain-openai==0.2.11 #################
+      - langchain==0.3.10 
+      - langchain-core==0.3.22 
+      - langchain-openai==0.2.11 
       - langgraph
       - langchain-community
-      - matplotlib==3.9.3 #################
-      - numpy==1.26.4 ########################
-      - openai==1.57.0 ########################
-      - scipy==1.15.1 ########################
-      - seaborn==0.13.2 ########################
-      - sounddevice==0.5.1 ########################
-      - speechrecognition==3.14.1 ########################
-      - pyaudio
+      - matplotlib==3.9.3 
+      - numpy==1.26.4
+      - openai==1.57.0
+      - scipy==1.15.1
+      - seaborn==0.13.2
+      - sounddevice==0.5.1
+      - speechrecognition==3.14.1
