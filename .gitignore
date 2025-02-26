@@ -1,3 +1,8 @@
 .DS_Store
 metagpt.egg-info/
 metagpt/__pycache__/
+examples/ipynb_checkpoints/
+examples/recognizewhisper_example.py
+metagpt/.ipynb_checkpoints/
+proof_of_concept_nb/
+temp_audio.wav
